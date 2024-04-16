@@ -1,10 +1,10 @@
 .wrap {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
   grid-auto-rows: max-content;
 }
 .beat {
-  padding: 2em;
+  padding: 1em 0;
   text-align: center;
 }
 .beatLength {
@@ -12,4 +12,13 @@
 }
 .beatMs {
   color: rgb(var(--tertiary-color));
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .beat {
+    padding: 2em;
+  }
 }
