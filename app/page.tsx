@@ -1,6 +1,10 @@
 "use client";
 
 import BeatsTable from "@/components/BeatsTable";
+import NoteTable from "@/components/NoteTable";
+
+import PitchNameInput from "@/components/PitchNameInput";
+import ScaleTypeSelect from "@/components/ScaleTypeSelect";
 import { useEffect, useState } from "react";
 import TempoInput from "../components/TempoInput";
 import styles from "./page.module.css";
@@ -8,6 +12,8 @@ import styles from "./page.module.css";
 export default function Home() {
   const [tempo, setTempo] = useState(120);
   const [qNoteLengthMs, setQNoteLengthMs] = useState(0);
+  const [pitchName, setPichtName] = useState("C");
+  const [scaleType, setScaleType] = useState("major");
 
   useEffect(() => {
     const minute = 60 * 1000;
@@ -34,6 +40,12 @@ export default function Home() {
         </div>
       </div>
       <BeatsTable qNoteLengthMs={qNoteLengthMs} />
+      <ScaleTypeSelect
+        scaleType={scaleType}
+        scaleTypeChanged={(v: string) => setScaleType(v)}
+      />
+      <PitchNameInput pitchNamechanged={(v: string) => setPichtName(v)} />
+      <NoteTable pitchName={pitchName} scaleType={scaleType} />
     </main>
   );
 }
