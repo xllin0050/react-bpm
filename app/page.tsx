@@ -40,10 +40,13 @@ export default function Home() {
         </div>
       </div>
       <BeatsTable qNoteLengthMs={qNoteLengthMs} />
+      <div className={styles.description}>select your scale</div>
       <ScaleTypeSelect
         scaleType={scaleType}
         scaleTypeChanged={(v: string) => setScaleType(v)}
       />
+      <div className={styles.description}>select your pitch name</div>
+
       <PitchNameInput pitchNamechanged={(v: string) => setPichtName(v)} />
       <NoteTable pitchName={pitchName} scaleType={scaleType} />
     </main>

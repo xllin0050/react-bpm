@@ -3,14 +3,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 6rem;
+  padding: 1em 0 0;
   min-height: 100vh;
 }
 .description {
   color: rgb(var(--primary-color));
   text-transform: capitalize;
   font-weight: bold;
-  padding: 0 0 1.5em;
+  padding: 1.5em 0;
 }
 .center {
   display: flex;

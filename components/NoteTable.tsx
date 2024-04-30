@@ -39,10 +39,10 @@ export default function NoteTable({
   const scale = findScale(typeSteps, pitchName);
   const list = scale.map((note, idx) => {
     return (
-      <div className="note" key={idx}>
+      <div key={idx} style={{ padding: "1em", fontSize: "1.2em" }}>
         {note}
       </div>
     );
   });
-  return <div>{list}</div>;
+  return <div style={{ display: "flex", padding: "1em" }}>{list}</div>;
 }

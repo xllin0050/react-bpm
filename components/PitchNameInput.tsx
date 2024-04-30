@@ -26,7 +26,7 @@ export default function PitchNameInput({
     );
   });
   return (
-    <div>
+    <div style={{ padding: "1em 0 0" }}>
       <select
         onChange={(e) => {
           pitchNamechanged(e.target.value);

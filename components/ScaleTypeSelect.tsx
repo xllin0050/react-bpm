@@ -7,7 +7,7 @@ export default function ScaleTypeSelect({
 }) {
   const scaleTypes = ["major", "minor"].map((type, idx) => {
     return (
-      <div key={idx}>
+      <div key={idx} style={{ padding: "1em" }}>
         <label>
           <input
             type="radio"
@@ -15,12 +15,15 @@ export default function ScaleTypeSelect({
             checked={scaleType === type}
             onChange={(e) => scaleTypeChanged(e.target.value)}
           />
-
-          {type}
+          <span
+            style={{ textTransform: "uppercase", padding: "1em 0.5em 1em" }}
+          >
+            {type}
+          </span>
         </label>
       </div>
     );
   });
 
-  return <div>{scaleTypes}</div>;
+  return <div style={{ display: "flex" }}>{scaleTypes}</div>;
 }

@@ -1,5 +1,3 @@
-import styles from "./TempoInput.module.css";
-
 export default function TempoInput({
   tempochanged,
   currentTempo = 120,
@@ -8,7 +6,7 @@ export default function TempoInput({
   currentTempo: number;
 }) {
   return (
-    <div className={styles.wrap}>
+    <div>
       <input
         type="number"
         value={currentTempo}
