@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BPM Calculator App",
+  title: "BPM Calculator & Scale Finder",
   description:
     "Time the attack, decay, sustain, or release on your compressors, limiters, reverbs, delays",
 };

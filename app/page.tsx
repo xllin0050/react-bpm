@@ -49,6 +49,9 @@ export default function Home() {
 
       <PitchNameInput pitchNamechanged={(v: string) => setPichtName(v)} />
       <NoteTable pitchName={pitchName} scaleType={scaleType} />
+      <p style={{ paddingTop: "1em" }}>
+        Carl made this in {new Date().getFullYear()}.
+      </p>
     </main>
   );
 }
