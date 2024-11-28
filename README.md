@@ -1,6 +1,6 @@
-# React BPM (業務流程管理系統)
+# React BPM
 
-使用 Next.js 14、React 18 和 TypeScript 建構的現代化業務流程管理系統。
+使用 Next.js 14、React 18 和 TypeScript 建構的音符長度計算器。
 
 ## 功能特點
 
@@ -20,13 +20,6 @@ react-bpm/
 ├── styles/           # 全域樣式
 └── package.json      # 專案依賴和腳本
 ```
-
-## 可用的指令
-
-- `npm run dev` - 啟動開發伺服器
-- `npm run build` - 建構生產環境的應用程式
-- `npm start` - 執行生產環境的應用程式
-- `npm run lint` - 執行程式碼品質檢查
 
 ## 使用技術
 
