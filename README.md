@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React BPM (業務流程管理系統)
 
-## Getting Started
+使用 Next.js 14、React 18 和 TypeScript 建構的現代化業務流程管理系統。
 
-First, run the development server:
+## 功能特點
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 使用 Next.js 14 建構的現代 React 應用
+- 使用 TypeScript 進行型別安全的開發
+- 基於元件的架構設計
+- 支援熱重載的快速開發環境
+- 針對生產環境最佳化的建構流程
+
+## 專案結構
+
+```
+react-bpm/
+├── app/                # Next.js 14 應用程式目錄
+├── components/         # 可重用的 React 元件
+├── public/            # 靜態檔案
+├── styles/           # 全域樣式
+└── package.json      # 專案依賴和腳本
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 可用的指令
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` - 啟動開發伺服器
+- `npm run build` - 建構生產環境的應用程式
+- `npm start` - 執行生產環境的應用程式
+- `npm run lint` - 執行程式碼品質檢查
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 使用技術
 
-## Learn More
+- [Next.js](https://nextjs.org/) - React 生產級框架
+- [React](https://reactjs.org/) - 用於建構使用者介面的 JavaScript 函式庫
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript 的超集合程式語言
+- [ESLint](https://eslint.org/) - 程式碼品質檢查工具
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
